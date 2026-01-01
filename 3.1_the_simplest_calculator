@@ -1,0 +1,17 @@
+# ДЗ 3.1. Найпростіший калькулятор
+
+x = float(input("ведіть перше число "))
+y = float(input("ведіть друге число "))
+perfomance = input("Введіть дію (+, -, *, /) ")
+
+if perfomance == "+":
+    print(x + y)
+elif perfomance == "-":
+    print(x - y)
+elif perfomance == "*":
+    print(x * y)
+elif perfomance == "/":
+    if y != 0:
+        print(x / y)
+    else:
+        print("Ділення на нуль неможливе")
