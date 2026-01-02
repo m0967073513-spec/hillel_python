@@ -2,15 +2,15 @@
 
 x = float(input("ведіть перше число "))
 y = float(input("ведіть друге число "))
-perfomance = input("Введіть дію (+, -, *, /) ")
+operator = input("Введіть дію (+, -, *, /) ")
 
-if perfomance == "+":
+if operator == "+":
     print(x + y)
-elif perfomance == "-":
+elif operator == "-":
     print(x - y)
-elif perfomance == "*":
+elif operator == "*":
     print(x * y)
-elif perfomance == "/":
+elif operator == "/":
     if y != 0:
         print(x / y)
     else:
