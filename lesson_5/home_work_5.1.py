@@ -4,12 +4,14 @@ import string
 import keyword
 
 while True:
-
     name = input("Введіть коректне ім'я змінної: ")
     bad_punct = string.punctuation.replace("_", "")
     is_valid = True
 
     if name == "":
+        is_valid = False
+
+    elif name in keyword.kwlist:
         is_valid = False
 
     elif name[0].isdigit():
@@ -21,10 +23,7 @@ while True:
     elif any(ch.isspace() or ch in bad_punct for ch in name):
         is_valid = False
 
-    elif "__" in name:
-        is_valid = False
-
-    elif name in keyword.kwlist:
+    elif set(name) == {"_"} and len(name) > 1:
         is_valid = False
 
     print(is_valid)
