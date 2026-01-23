@@ -5,15 +5,12 @@ def correct_sentence(text):
     if not text:
         return text
 
-
     text = text[0].upper() + text[1:]
-
 
     if not text.endswith('.'):
         text += '.'
 
     return text
-
 
 assert correct_sentence("greetings, friends") == "Greetings, friends.", "Test1"
 assert correct_sentence("hello") == "Hello.", "Test2"
