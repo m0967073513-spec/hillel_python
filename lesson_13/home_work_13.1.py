@@ -60,9 +60,6 @@ class Group:
 
 
 
-# Тести
-
-
 st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
 st2 = Student('Female', 25, 'Liza', 'Taylor', 'AN145')
 
@@ -77,6 +74,6 @@ assert gr.find_student('Jobs2') is None, 'Test2'
 assert isinstance(gr.find_student('Jobs'), Student) is True, 'Метод пошуку повинен повертати екземпляр'
 
 gr.delete_student('Taylor')
-print(gr)  # Only one student
+print(gr)
 
-gr.delete_student('Taylor')  # No error!
+gr.delete_student('Taylor')
