@@ -1,5 +1,7 @@
-from fraction import Fraction
 
+# ДЗ 15.2
+
+from fraction import Fraction
 
 def parse_fraction(text: str) -> Fraction:
     text = text.strip()
