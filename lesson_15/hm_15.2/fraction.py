@@ -1,3 +1,6 @@
+
+# ДЗ 15.2. Клас Правильний дріб
+
 class Fraction:
 
     def __init__(self, a, b):
