@@ -44,7 +44,7 @@ class Group:
         self.group = set()
 
     def add_student(self, student):
-        # если студент уже есть — просто ничего не делаем (set так работает)
+        # если студент уже есть — просто ничего не делаем
         if student in self.group:
             return
 
