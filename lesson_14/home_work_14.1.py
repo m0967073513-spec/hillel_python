@@ -49,7 +49,7 @@ class Group:
             return
 
         #  ограничение 10 студентов
-        if len(self.group) >= self.MAX_STUDENTS:
+        if len(self.group) > self.MAX_STUDENTS:
             raise GroupLimitError(f'Неможливо додати більше ніж {self.MAX_STUDENTS} студентів до групи {self.number}')
 
         self.group.add(student)
